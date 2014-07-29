@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChenMai", "ChenMai\ChenMai.csproj", "{9982604F-36EE-4817-9CCC-F112249A80C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChenMai.Web", "ChenMai\ChenMai.Web.csproj", "{9982604F-36EE-4817-9CCC-F112249A80C3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChenMai.Tests", "ChenMai.Tests\ChenMai.Tests.csproj", "{4C93449E-4322-45D6-BEBD-D9CFE9A694D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{38C4E8C4-47E1-4576-83AF-212778840BDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9087440B-12AA-4CE2-ADD4-184100F943E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{6D39E62C-A563-485B-9C56-1B493429AE7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{2A63EAB6-5014-40E3-84E1-529230A5382C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +32,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9982604F-36EE-4817-9CCC-F112249A80C3} = {38C4E8C4-47E1-4576-83AF-212778840BDD}
+		{4C93449E-4322-45D6-BEBD-D9CFE9A694D6} = {9087440B-12AA-4CE2-ADD4-184100F943E2}
 	EndGlobalSection
 EndGlobal
