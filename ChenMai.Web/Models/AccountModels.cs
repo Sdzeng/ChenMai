@@ -10,8 +10,7 @@ namespace ChenMai.Models
 {
     public class UsersContext : DbContext
     {
-        public UsersContext()
-            : base("DefaultConnection")
+        public UsersContext(): base("DefaultConnection")
         {
         }
 
