@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChenMai.DAL.Oracle
+namespace ChenMai.IDAL.Basic
 {
-    public class Class1
+    public interface IPlantDAL
     {
     }
 }

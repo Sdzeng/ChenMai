@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E8D3E183-A875-4120-B21F-D186601CDD4B}</ProjectGuid>
+    <ProjectGuid>{3BDB9D83-2E04-4D98-A54C-9ECEFC1BB1DF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ChenMai.DataAccess</RootNamespace>
-    <AssemblyName>ChenMai.DataAccess</AssemblyName>
+    <RootNamespace>ChenMai.IDAL</RootNamespace>
+    <AssemblyName>ChenMai.IDAL</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,26 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataAccessFactory.cs" />
+    <Compile Include="Basic\IPlantDAL.cs" />
+    <Compile Include="IDataAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ChenMai.DAL.MySQL\ChenMai.DAL.MySQL.csproj">
-      <Project>{75aaa14a-174a-40a2-84ea-17e3e2bf9059}</Project>
-      <Name>ChenMai.DAL.MySQL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ChenMai.DAL.Oracle\ChenMai.DAL.Oracle.csproj">
-      <Project>{3e49350a-fb00-4d59-a1c0-9611ed764b37}</Project>
-      <Name>ChenMai.DAL.Oracle</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ChenMai.DAL.SQLite\ChenMai.DAL.SQLite.csproj">
-      <Project>{c7ebefe1-4c99-4f6d-9c35-7c3c5666b8ab}</Project>
-      <Name>ChenMai.DAL.SQLite</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ChenMai.IDAL\ChenMai.IDAL.csproj">
-      <Project>{3bdb9d83-2e04-4d98-a54c-9ecefc1bb1df}</Project>
-      <Name>ChenMai.IDAL</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
