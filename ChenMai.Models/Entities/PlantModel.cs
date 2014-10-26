@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChenMai.Models
+namespace ChenMai.Models.Entities
 {
     public class PlantModel
     {
-        public string ID { get; set; }
+        public string PlantModelD { get; set; }
 
         public string Name { get; set; }
 
@@ -17,7 +17,9 @@ namespace ChenMai.Models
         public string Remark { get; set; }
 
 
-        public string CreateUser { get; set; }
+        public string UserID { get; set; }
+
+        public virtual UserModel User { get; set; }
 
         public DateTime CreateDate { get; set; }
 
