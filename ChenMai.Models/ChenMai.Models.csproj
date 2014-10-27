@@ -49,6 +49,7 @@
     <Compile Include="Entities\PlantModel.cs" />
     <Compile Include="Entities\UserModel.cs" />
     <Compile Include="Mapping\PlantModelMap.cs" />
+    <Compile Include="Mapping\UserModelMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

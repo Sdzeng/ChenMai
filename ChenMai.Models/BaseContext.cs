@@ -23,6 +23,7 @@ namespace ChenMai.Models
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new PlantModelMap());
+            modelBuilder.Configurations.Add(new UserModelMap());
         }
     }
 }

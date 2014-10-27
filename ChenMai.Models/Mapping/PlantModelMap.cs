@@ -15,12 +15,13 @@ namespace ChenMai.Models.Mapping
         public PlantModelMap()
         {
             this.ToTable("Plant");
-            this.Property(model => model.UserID).HasMaxLength(100);
+            this.Property(model => model.ID).HasMaxLength(100);
             this.Property(model => model.Name).IsRequired().HasMaxLength(300);
           
             this.Property(model => model.Remark).HasMaxLength(2000);
 
-            this.HasRequired(model => model.User).WithMany(model => model.Plants).HasForeignKey(model=>model.PlantModelD).WillCascadeOnDelete(false);
+            this.HasRequired(model => model.User).WithMany(model => model.Plants).HasForeignKey(model => model.CreateUser).WillCascadeOnDelete(false);
+            //this.HasRequired(model => model.User).WithMany(model => model.Plants).HasForeignKey(model=>model.ID).WillCascadeOnDelete(false);
         }
     }
 }

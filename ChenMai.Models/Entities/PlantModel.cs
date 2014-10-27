@@ -8,7 +8,7 @@ namespace ChenMai.Models.Entities
 {
     public class PlantModel
     {
-        public string PlantModelD { get; set; }
+        public string ID { get; set; }
 
         public string Name { get; set; }
 
@@ -17,7 +17,7 @@ namespace ChenMai.Models.Entities
         public string Remark { get; set; }
 
 
-        public string UserID { get; set; }
+        public string CreateUser{get; set; }
 
         public virtual UserModel User { get; set; }
 

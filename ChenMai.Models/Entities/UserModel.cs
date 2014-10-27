@@ -8,7 +8,7 @@ namespace ChenMai.Models.Entities
 {
     public class UserModel
     {
-        public string UserModelID { get; set; }
+        public string ID { get; set; }
      
         public string Password { get; set; }
 
