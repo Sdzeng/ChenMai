@@ -13,17 +13,18 @@ namespace ChenMai.Controllers
 {
     public class HomeController : Controller
     {
+
         public ActionResult Index()
         {
             ViewBag.Message = "song";
 
             Database.SetInitializer(new DropCreateDatabaseIfModelChanges<BaseContext>());
 
-            UserModel userModel = new UserModel { UserModelID = "admin", UserName = "管理员", RealName = "song", Password = "123" };
+            UserModel userModel = new UserModel { ID = "admin3", UserName = "管理员", RealName = "song", Password = "123" };
 
             PlantModel plantModel = new PlantModel
             {
-                PlantModelD = "001",
+                ID = "003",
                 Name = "猴面包树",
                 Origin = "非洲",
                 Remark = "test",
