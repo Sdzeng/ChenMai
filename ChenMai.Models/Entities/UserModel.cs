@@ -16,7 +16,9 @@ namespace ChenMai.Models.Entities
 
         public string RealName { get; set; }
 
-        public virtual ICollection<PlantModel> Plants { get; set; }
+        public virtual ICollection<PlantModel> CreatePlants { get; set; }
+
+        public virtual ICollection<PlantModel> ModifyPlants { get; set; }
 
     }
 }

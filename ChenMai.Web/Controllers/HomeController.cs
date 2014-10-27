@@ -20,19 +20,26 @@ namespace ChenMai.Controllers
 
             Database.SetInitializer(new DropCreateDatabaseIfModelChanges<BaseContext>());
 
-            UserModel userModel = new UserModel { ID = "admin3", UserName = "管理员", RealName = "song", Password = "123" };
+            List<OriginModel> originModelList = new List<OriginModel> { new OriginModel { ID = "001", Name = "非洲" } };
+
+            UserModel createUserModel = new UserModel { ID = "admin1", UserName = "管理员", RealName = "song", Password = "123" };
+
+            UserModel modifyUserModel = new UserModel { ID = "admin2", UserName = "管理员", RealName = "song", Password = "123" };
 
             PlantModel plantModel = new PlantModel
             {
                 ID = "003",
                 Name = "猴面包树",
-                Origin = "非洲",
+                Origins = originModelList,
                 Remark = "test",
-                User=userModel,
-                CreateDate = DateTime.Now
+                CreateUser=createUserModel,
+                CreateDate = DateTime.Now,
+                ModifyUser=modifyUserModel,
+                ModifyDate=DateTime.Now
             };
             BaseContext context = new BaseContext();　　　　//插入一行值
-            context.Users.Add(userModel);
+            context.Users.Add(createUserModel);
+            context.Users.Add(modifyUserModel);
             context.Plants.Add(plantModel);
       
             context.SaveChanges();

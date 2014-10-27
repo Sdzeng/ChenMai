@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseContext.cs" />
+    <Compile Include="Entities\OriginModel.cs" />
     <Compile Include="Entities\PlantModel.cs" />
     <Compile Include="Entities\UserModel.cs" />
     <Compile Include="Mapping\PlantModelMap.cs" />

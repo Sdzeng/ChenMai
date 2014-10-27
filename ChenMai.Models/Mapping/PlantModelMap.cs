@@ -20,8 +20,16 @@ namespace ChenMai.Models.Mapping
           
             this.Property(model => model.Remark).HasMaxLength(2000);
 
-            this.HasRequired(model => model.User).WithMany(model => model.Plants).HasForeignKey(model => model.CreateUser).WillCascadeOnDelete(false);
+            this.HasOptional(model => model.CreateUser).WithMany(model => model.CreatePlants);
+            this.HasOptional(model => model.ModifyUser).WithMany(model => model.ModifyPlants);
             //this.HasRequired(model => model.User).WithMany(model => model.Plants).HasForeignKey(model=>model.ID).WillCascadeOnDelete(false);
+
+            this.HasMany(model => model.Origins).WithMany(model => model.Plants).Map(NewTable =>
+            {
+                NewTable.ToTable("PlantOriginRelations");
+                NewTable.MapLeftKey("PlantId");
+                NewTable.MapRightKey("OriginId");
+            });
         }
     }
 }

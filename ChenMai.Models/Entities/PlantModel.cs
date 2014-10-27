@@ -12,20 +12,20 @@ namespace ChenMai.Models.Entities
 
         public string Name { get; set; }
 
-        public string Origin { get; set; }
+        public ICollection<OriginModel> Origins { get; set; }
 
         public string Remark { get; set; }
 
 
-        public string CreateUser{get; set; }
-
-        public virtual UserModel User { get; set; }
+        public UserModel CreateUser { get; set; }
 
         public DateTime CreateDate { get; set; }
 
-        public string ModifyUser { get; set; }
+        public UserModel ModifyUser { get; set; }
 
         public Nullable<DateTime> ModifyDate { get; set; }
+
+      
 
     }
 }
