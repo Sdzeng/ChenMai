@@ -12,6 +12,8 @@ namespace ChenMai.Models.Entities
 
         public string Name { get; set; }
 
+        public string Remark { get; set; }
+
         public ICollection<PlantModel> Plants { get; set; }
     }
 }
