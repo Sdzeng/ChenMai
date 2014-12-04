@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ChenMai;
-using ChenMai.Controllers;
+using ChenMai.Web;
+using ChenMai.Web.Controllers;
 
 namespace ChenMai.Tests.Controllers
 {

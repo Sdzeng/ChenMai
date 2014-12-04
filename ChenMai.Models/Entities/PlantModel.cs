@@ -16,6 +16,8 @@ namespace ChenMai.Models.Entities
 
         public string Remark { get; set; }
 
+        //public string PlantFamilies { get; set; }
+
 
         public UserModel CreateUser { get; set; }
 

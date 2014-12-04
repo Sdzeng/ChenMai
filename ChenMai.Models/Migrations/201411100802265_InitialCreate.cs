@@ -58,6 +58,8 @@ namespace ChenMai.Models.Migrations
                 .Index(t => t.PlantId)
                 .Index(t => t.OriginId);
             
+            //每次数据迁移时都会执行
+            Sql("update dbo.plant set remark='Test InitialCreate' where id='001'   ");
         }
         
         public override void Down()

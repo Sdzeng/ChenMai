@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ChenMai.Models.Entities.PlantModel>
+﻿@model IEnumerable<ChenMai.Models.ViewModels.PlantViewModel>
 
 @{
     ViewBag.Title = "Home Page";
@@ -22,8 +22,13 @@
     </section>
 }
 
+<form method="get">
+    <input name="searchText" type="search" />
+    <input type="submit" value="Search by text" />
+</form>
+
 @foreach (var item in Model)
 {
-    <div>@item.ID,@item.Name,@item.Origins</div> 
+    <div>@item.Name,@item.OriginsCount</div> 
     <hr/>
 }

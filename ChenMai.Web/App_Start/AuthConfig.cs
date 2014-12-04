@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.Web.WebPages.OAuth;
 using ChenMai.Models;
 
-namespace ChenMai
+namespace ChenMai.Web
 {
     public static class AuthConfig
     {

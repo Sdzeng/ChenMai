@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace ChenMai
+namespace ChenMai.Web
 {
     public class BundleConfig
     {

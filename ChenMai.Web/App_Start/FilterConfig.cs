@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace ChenMai
+namespace ChenMai.Web
 {
     public class FilterConfig
     {
